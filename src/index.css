@@ -6,6 +6,7 @@ html {
   font-family: "Spoqa Han Sans Neo", sans-serif;
 }
 
+/* List Styling */
 li {
   @apply flex items-center;
 }
@@ -15,7 +16,21 @@ li::before {
   content: "";
 }
 
-/* .dot {
+/* Link Styling */
+a {
+  @apply relative;
+}
+
+a::after {
+  @apply absolute bottom-0 left-0 w-full h-[1px] bg-black transform origin-left scale-x-0 transition-transform duration-1000 ease-in-out;
+  content: "";
+}
+
+a:hover::after {
+  @apply scale-x-100;
+}
+
+.dot {
   animation: scale-up 1.5s both cubic-bezier(0.8, 0, 0.2, 1);
   animation-delay: 0.3s;
 }
@@ -24,12 +39,12 @@ li::before {
   animation: scale-x-up 2.5s both cubic-bezier(0.8, 0, 0.2, 1);
   animation-delay: 2.5s;
   transform-origin: left;
-} */
+}
 
-/* .content {
+.content {
   animation: fade-in 0.5s both;
   animation-delay: 4s;
-} */
+}
 
 @keyframes scale-up {
   from {
