@@ -5,7 +5,17 @@
 html {
   font-family: "Spoqa Han Sans Neo", sans-serif;
 }
-.dot {
+
+li {
+  @apply flex items-center;
+}
+
+li::before {
+  @apply relative w-1.5 h-1.5 mr-2 rounded-full bg-black;
+  content: "";
+}
+
+/* .dot {
   animation: scale-up 1.5s both cubic-bezier(0.8, 0, 0.2, 1);
   animation-delay: 0.3s;
 }
@@ -14,7 +24,12 @@ html {
   animation: scale-x-up 2.5s both cubic-bezier(0.8, 0, 0.2, 1);
   animation-delay: 2.5s;
   transform-origin: left;
-}
+} */
+
+/* .content {
+  animation: fade-in 0.5s both;
+  animation-delay: 4s;
+} */
 
 @keyframes scale-up {
   from {
@@ -33,5 +48,15 @@ html {
 
   to {
     transform: scaleX(1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

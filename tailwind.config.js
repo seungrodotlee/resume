@@ -12,7 +12,7 @@ const customPlugins = plugin(({ addComponents, addUtilities, addVariant }) => {
   addComponents({
     ".container": {
       width: "100%",
-      maxWidth: "1024px",
+      maxWidth: "800px",
       padding: "0 1.5rem",
       margin: "0 auto",
     },

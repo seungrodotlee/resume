@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     await delay(2300);
     const headerLabel = new Geul(
       "resume",
-      document.querySelector(".dot-label"),
+      document.querySelector(".header-label"),
       80
     );
     await headerLabel.run();
