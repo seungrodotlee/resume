@@ -4,8 +4,8 @@
   "description": "Public Resume of seungrodotlle",
   "scripts": {
     "deploy": "npx gh-pages -d dist",
-    "build": "npx webpack build",
-    "watch": "npx webpack serve"
+    "build": "npx webpack build --mode=production",
+    "watch": "npx webpack serve --mode=development"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
     "url": "https://github.com/seungrodotlee/resume/issues"
   },
   "homepage": "https://github.com/seungrodotlee/resume#readme",
-  "dependencies": {},
+  "dependencies": {
+    "geul": "^1.0.14"
+  },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.8",

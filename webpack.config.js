@@ -4,11 +4,10 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  mode: "production",
   entry: "./src/main.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/resume/",
+    publicPath: process.env.NODE_ENV === "production" ? "/resume/" : "/",
   },
   module: {
     rules: [
