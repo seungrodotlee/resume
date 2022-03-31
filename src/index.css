@@ -21,6 +21,11 @@ a {
   @apply relative;
 }
 
+a::before {
+  @apply absolute bottom-0 left-0 w-full h-[1px] bg-black bg-opacity-20;
+  content: "";
+}
+
 a::after {
   @apply absolute bottom-0 left-0 w-full h-[1px] bg-black transform origin-left scale-x-0 transition-transform duration-1000 ease-in-out;
   content: "";
@@ -41,10 +46,10 @@ a:hover::after {
   transform-origin: left;
 }
 
-.content {
+/* .content {
   animation: fade-in 0.5s both;
   animation-delay: 4s;
-}
+} */
 
 @keyframes scale-up {
   from {

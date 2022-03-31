@@ -1,37 +1,48 @@
 import Geul from "geul";
-import { delay } from "./utility";
+import { delay, getDateDiff } from "./utility";
+import data from "./data.json";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const typeHeaderLabel = async () => {
-    await delay(2300);
-    const headerLabel = new Geul(
-      "resume",
-      document.querySelector(".header-label"),
-      80
-    );
-    await headerLabel.run();
-  };
-
   typeHeaderLabel();
-
-  const getWorkYear = () => {
-    const workYearElement = document.querySelector(".work-year");
-    const startYear = 2021;
-    const startMonth = 6;
-
-    const today = new Date();
-    const todayYear = today.getFullYear();
-    const todayMonth = today.getMonth() + 1;
-    const diff = (todayYear - startYear) * 12 - (startMonth - todayMonth);
-    console.log(diff);
-    const year = parseInt(diff / 12);
-    const month = parseInt(diff % 12);
-
-    const label = `${year > 0 ? `${year}년 ` : ""}${
-      month > 0 ? `${month}개월` : ""
-    } 차`;
-    workYearElement.textContent = label;
-  };
-
   getWorkYear();
+  fillInData();
 });
+
+const typeHeaderLabel = async () => {
+  await delay(2300);
+  const headerLabel = new Geul(
+    "resume",
+    document.querySelector(".header-label"),
+    80
+  );
+  await headerLabel.run();
+};
+
+const getWorkYear = () => {
+  const workYearElement = document.querySelector(".work-year");
+
+  const dateDiff = getDateDiff(2021, 6);
+
+  const label = `${dateDiff} 차`;
+  workYearElement.textContent = label;
+};
+
+const appendListItem = (target) => {
+  const listElement = document.querySelector(`.${target}-list`);
+  const listData = data[`${target}s`];
+
+  listData.forEach((d) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = d.link;
+    a.textContent = d.label;
+    li.appendChild(a);
+
+    listElement.appendChild(li);
+  });
+};
+
+const fillInData = () => {
+  appendListItem("space");
+  appendListItem("file");
+};

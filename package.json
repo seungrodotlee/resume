@@ -5,7 +5,7 @@
   "scripts": {
     "deploy": "npx gh-pages -d dist",
     "build": "npx webpack build --mode=production",
-    "watch": "npx webpack serve --mode=development"
+    "dev": "npx webpack serve --mode=development"
   },
   "repository": {
     "type": "git",

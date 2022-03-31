@@ -1,0 +1,84 @@
+{
+  "spaces": [
+    {
+      "label": "깃허브",
+      "link": "https://github.com/seungrodotlee"
+    },
+    {
+      "label": "블로그",
+      "link": "https://seungrodotlee.github.io/dotlog"
+    },
+    {
+      "label": "Velog (기술블로그)",
+      "link": "https://velog.io/@seungrodotlee"
+    }
+  ],
+  "files": [
+    {
+      "label": "한눈에 자기소개서",
+      "link": ""
+    },
+    {
+      "label": "TMI 자기소개서",
+      "link": "https://drive.google.com/file/d/1l_N5TIQJPdFa9eZqcHL4lmbddBJXCVOn/view?usp=sharing"
+    }
+  ],
+  "exprience": [
+    {
+      "company": "Toothlife",
+      "team": "전략개발팀",
+      "position": "Frontend Lead",
+      "from": "2021.09",
+      "to": "now",
+      "works": [
+        "<a href='https://gachaon.com'>Gachaon</a> 서비스 프론트엔드 개발"
+      ]
+    },
+    {
+      "company": "Lavarwave",
+      "team": "개발팀",
+      "position": "팀원",
+      "from": "2021.06",
+      "to": "2021.08",
+      "works": [
+        "기존의 웹 호스팅 + 외주 기반 홈페이지 자체 구축으로 전환을 위해 서버 구축 및 홈페이지 기획",
+        "기존의 솔루션 과정 중 수동으로 작업하던 부분을 일부 자동화하여 처리할 수 있는 프로그램 제작하여 전사 배포",
+        "국제치안산업박람회 참가를 위한 <a href='https://www.lavarwave.co.kr/detail?newsNo=45'>'몸캠피싱 체험앱'</a> 개발"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Discovery Naturescape",
+      "link": "https://discoverynaturescape.com",
+      "from": "2022.02",
+      "to": "2022.03",
+      "notes": [
+        "프리랜서 계약을 통해 프론트엔드 개발을 진행",
+        "페이지 상의 모든 텍스트, 이미지를 관리자 페이지에서 교체할 수 있도록 구현"
+      ]
+    },
+    {
+      "title": "Geul.js",
+      "link": "https://github.com/seungrodotlee/geul",
+      "from": "2021.01",
+      "to": "2021.02",
+      "notes": [
+        "자모음이 조합되며 텍스트가 타이핑되는 효과 구현",
+        "덮어쓰기, 이어쓰기, 특정지점부터 쓰기, 백스페이스 등 다양한 동작을 지원",
+        "NPM과 CDN을 이용하여 배포"
+      ]
+    },
+    {
+      "title": "croquis",
+      "link": "https://github.com/seungrodotlee/croquis",
+      "from": "2021.01",
+      "to": "2021.03",
+      "notes": [
+        "프론트엔드 프레임워크들의 원리가 궁금하여 시작한 템플릿기반 프레임워크 제작 프로젝트",
+        "WebComponent와 Mutation 등의 기술을 이용하여 구현",
+        "제작 중 졸업과제, 취업 등의 문제로 프로젝트 중단상태, 추후 여유가 되면 처음부터 다시 진행해볼 예정"
+      ]
+    }
+  ]
+}
