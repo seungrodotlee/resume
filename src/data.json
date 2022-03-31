@@ -26,24 +26,32 @@
   "exprience": [
     {
       "company": "Toothlife",
-      "team": "전략개발팀",
-      "position": "Frontend Lead",
-      "from": "2021.09",
-      "to": "now",
-      "works": [
-        "<a href='https://gachaon.com'>Gachaon</a> 서비스 프론트엔드 개발"
+      "role": [
+        {
+          "team": "전략개발팀",
+          "position": "Frontend Lead",
+          "from": "2021.09",
+          "to": "현재",
+          "works": [
+            "<a href='https://gachaon.com'>Gachaon</a> 서비스 프론트엔드 개발"
+          ]
+        }
       ]
     },
     {
       "company": "Lavarwave",
-      "team": "개발팀",
-      "position": "팀원",
-      "from": "2021.06",
-      "to": "2021.08",
-      "works": [
-        "기존의 웹 호스팅 + 외주 기반 홈페이지 자체 구축으로 전환을 위해 서버 구축 및 홈페이지 기획",
-        "기존의 솔루션 과정 중 수동으로 작업하던 부분을 일부 자동화하여 처리할 수 있는 프로그램 제작하여 전사 배포",
-        "국제치안산업박람회 참가를 위한 <a href='https://www.lavarwave.co.kr/detail?newsNo=45'>'몸캠피싱 체험앱'</a> 개발"
+      "role": [
+        {
+          "team": "개발팀",
+          "position": "팀원",
+          "from": "2021.06",
+          "to": "2021.08",
+          "works": [
+            "기존의 웹 호스팅 + 외주 기반 홈페이지 자체 구축으로 전환을 위해 서버 구축 및 <a href='https://www.lavarwave.co.kr'>홈페이지</a> 기획",
+            "기존의 솔루션 과정 중 수동으로 작업하던 부분을 일부 자동화하여 처리할 수 있는 프로그램 제작하여 전사 배포",
+            "국제치안산업박람회 참가를 위한 <a href='https://www.lavarwave.co.kr/detail?newsNo=45'>'몸캠피싱 체험앱'</a> 개발"
+          ]
+        }
       ]
     }
   ],

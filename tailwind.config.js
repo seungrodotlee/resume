@@ -22,9 +22,13 @@ const customPlugins = plugin(({ addComponents, addUtilities, addVariant }) => {
 });
 
 module.exports = {
-  content: ["./public/index.html"],
+  content: ["./public/index.html", "./src/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#6667AB",
+      },
+    },
   },
   plugins: [customPlugins],
 };
